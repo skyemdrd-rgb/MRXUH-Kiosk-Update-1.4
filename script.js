@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
   /* =========================================
      ELEMENTS
@@ -27,6 +27,8 @@ window.addEventListener('load', () => {
   ========================= */
 
   function scaleApp(){
+
+  if(!app) return;
 
   const baseWidth = 1920;
   const baseHeight = 1080;
@@ -66,35 +68,37 @@ window.addEventListener(
   scaleApp
 );
 
-  /* =========================================
-     SCREEN NAVIGATION
-  ========================================= */
+/* =========================================
+   SCREEN NAVIGATION
+========================================= */
 
-  window.showScreen = function(id){
+window.showScreen = function(id){
 
-    const target =
-      document.getElementById(id);
+  const target = document.getElementById(id);
 
-    if(!target) return;
+  if(!target){
+    console.warn(`Screen not found: ${id}`);
+    return;
+  }
 
-    screens.forEach(screen => {
-      screen.classList.remove('active');
-    });
+  screens.forEach(screen => {
+    screen.classList.remove('active');
+  });
 
-    target.classList.add('active');
-  };
+  target.classList.add('active');
+};
 
-  window.goHome = function(){
-    showScreen('homeScreen');
-  };
+window.goHome = function(){
+  showScreen('homeScreen');
+};
 
-  window.goGuide = function(){
-    showScreen('guideScreen');
-  };
+window.goGuide = function(){
+  showScreen('guideScreen');
+};
 
-  window.goStart = function(){
-    showScreen('startScreen');
-  };
+window.goStart = function(){
+  showScreen('startScreen');
+};
 
   /* =========================================
      MAP STATE
@@ -272,6 +276,7 @@ window.addEventListener(
 
     void mapImage.offsetWidth;
 
+    mapImage.decoding = 'async';
     mapImage.src = data.image;
 
     mapImage.classList.add(
@@ -280,30 +285,28 @@ window.addEventListener(
 
     /* CLEAR DESTINATIONS */
 
-    destinations.innerHTML = '';
+    const fragment =
+  document.createDocumentFragment();
+
+data.destinations.forEach(item => {
+
+  const button =
+    document.createElement('div');
+
+  button.className = 'destination';
+  button.textContent = item.name;
+
+  button.onclick = () =>
+    showWaypoint(item.x, item.y);
+
+  fragment.appendChild(button);
+
+});
+
+destinations.replaceChildren(fragment);
 
     /* CREATE BUTTONS */
 
-    data.destinations.forEach(item => {
-
-      const button =
-        document.createElement('div');
-
-      button.className =
-        'destination';
-
-      button.innerText =
-        item.name;
-
-      button.onclick = () => {
-        showWaypoint(item.x, item.y);
-      };
-
-      destinations.appendChild(
-        button
-      );
-
-    });
 
   }
 
@@ -446,24 +449,55 @@ document.addEventListener(
   e => e.preventDefault()
 );
 
-if('serviceWorker' in navigator){
 
-  window.addEventListener('load', () => {
-
-    navigator.serviceWorker.register('sw.js')
-      .then(() => {
-
-        console.log('Service Worker Registered');
-
-      });
-
-  });
-
-}
 
 /* =========================================
-   OFFLINE MODE
+   MEMORY PROTECTION
 ========================================= */
 
+setInterval(() => {
+
+  if(!performance.memory) return;
+
+  const usedMB =
+    performance.memory.usedJSHeapSize /
+    1024 / 1024;
+
+  console.log(
+    `Memory Usage: ${Math.round(usedMB)} MB`
+  );
+
+  // Emergency reload
+  if(usedMB > 350){
+
+    console.warn(
+      'High memory usage detected. Reloading kiosk.'
+    );
+
+    location.reload();
+
+  }
+
+}, 60000);
+
+// Refresh every 2 hours
+setInterval(() => {
+  console.log('Scheduled kiosk refresh');
+  location.reload();
+}, 3 * 60 * 60 * 1000);
+
+/* =========================================
+   SMART PRELOAD
+========================================= */
+
+const preloadImages = [
+  'map/msc-map.png',
+  'interface/home.png'
+];
+
+preloadImages.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
 
 });
