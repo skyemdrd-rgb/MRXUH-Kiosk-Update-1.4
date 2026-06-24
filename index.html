@@ -27,14 +27,24 @@
   <!-- MAP PRELOADS -->
 
   <link rel="preload" as="image" href="map/msc-map.png">
+  <link rel="preload" as="image" href="map/msc-2nd-floor.png">
+  <link rel="preload" as="image" href="map/msc-3rd-floor.png">
+  <link rel="preload" as="image" href="map/msc-4th-floor.png">
 
-  <link rel="preload" as="image" href="map/old-building-map.png">s
+  <link rel="preload" as="image" href="map/old-building-map.png">
+  <link rel="preload" as="image" href="map/old-building-2nd-floor.png">
+  <link rel="preload" as="image" href="map/old-building-3rd-floor.png">
 
   <link rel="preload" as="image" href="interface/home.png">
 </head>
 
-<body>
+<body class="debug">
 
+  <div id="screensaver">
+  <video autoplay muted loop playsinline>
+    <source src="interface/screensaver.mp4" type="video/mp4">
+  </video>
+</div>
   <!-- LOADER -->
 
   <div id="loader">Loading...</div>
