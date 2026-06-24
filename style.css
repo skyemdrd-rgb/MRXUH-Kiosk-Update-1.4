@@ -107,19 +107,19 @@ body{
    MAIN BACKGROUNDS
 ========================================= */
 
-.home-bg{background-image:url('interface/home.webp');}
-.about-bg{background-image:url('interface/about.webp');}
-.guide-bg{background-image:url('interface/guide.webp');}
-.restaurant-bg{background-image:url('interface/restaurant.webp');}
-.specialty-bg{background-image:url('interface/msc.webp');}
-.clinics-bg{background-image:url('interface/clinics.webp');}
+.home-bg{background-image:url('interface/home.png');}
+.about-bg{background-image:url('interface/about.png');}
+.guide-bg{background-image:url('interface/guide.png');}
+.restaurant-bg{background-image:url('interface/restaurant.png');}
+.specialty-bg{background-image:url('interface/msc.png');}
+.clinics-bg{background-image:url('interface/clinics.png');}
 
 .about1-bg{
-  background-image:url('about/about-page1.webp');
+  background-image:url('about/about-page1.png');
 }
 
 .about2-bg{
-  background-image:url('about/about-page2.webp');
+  background-image:url('about/about-page2.png');
 }
 
 .aboutPage1Btn{
@@ -143,38 +143,38 @@ body{
 ========================================= */
 
 .services-bg{
-  background-image:url('services/services-main.webp');
+  background-image:url('services/services-main.png');
 }
 
 .hmo-bg{
-  background-image:url('services/hmo.webp');
+  background-image:url('services/hmo.png');
 }
 
 /* =========================================
    SPECIALTY BACKGROUNDS
 ========================================= */
 
-.cancer-bg{background-image:url('msc/cancercenter.webp');}
-.eye-bg{background-image:url('msc/eyecenter.webp');}
-.rehab-bg{background-image:url('msc/rehab.webp');}
-.hemo-bg{background-image:url('msc/hemodialysis.webp');}
-.cardio-bg{background-image:url('msc/cardio.webp');}
-.neuro-bg{background-image:url('msc/neurosleeplab.webp');}
-.hearing-bg{background-image:url('msc/hearingcenter.webp');}
-.rcu-bg{background-image:url('msc/rcu.webp');}
+.cancer-bg{background-image:url('msc/cancercenter.png');}
+.eye-bg{background-image:url('msc/eyecenter.png');}
+.rehab-bg{background-image:url('msc/rehab.png');}
+.hemo-bg{background-image:url('msc/hemodialysis.png');}
+.cardio-bg{background-image:url('msc/cardio.png');}
+.neuro-bg{background-image:url('msc/neurosleeplab.png');}
+.hearing-bg{background-image:url('msc/hearingcenter.png');}
+.rcu-bg{background-image:url('msc/rcu.png');}
 
 /* =========================================
    CLINIC BACKGROUNDS
 ========================================= */
 
-.dentistry-bg{background-image:url('clinics/dentistry.webp');}
-.ent-bg{background-image:url('clinics/ent.webp');}
-.obgyne-bg{background-image:url('clinics/obgyne.webp');}
-.onco-bg{background-image:url('clinics/onco.webp');}
-.ophtamology-bg{background-image:url('clinics/ophtamology.webp');}
-.pedia-bg{background-image:url('clinics/pedia.webp');}
-.physicalrehab-bg{background-image:url('clinics/physicalrehab.webp');}
-.surgery-bg{background-image:url('clinics/surgery.webp');}
+.dentistry-bg{background-image:url('clinics/dentistry.png');}
+.ent-bg{background-image:url('clinics/ent.png');}
+.obgyne-bg{background-image:url('clinics/obgyne.png');}
+.onco-bg{background-image:url('clinics/onco.png');}
+.ophtamology-bg{background-image:url('clinics/ophtamology.png');}
+.pedia-bg{background-image:url('clinics/pedia.png');}
+.physicalrehab-bg{background-image:url('clinics/physicalrehab.png');}
+.surgery-bg{background-image:url('clinics/surgery.png');}
 
 /* =========================================
    HOTSPOTS
@@ -360,31 +360,31 @@ body.debug .hotspot{
 ========================================= */
 
 .cashier-bg{
-  background-image:url('services/cashier.webp');
+  background-image:url('services/cashier.png');
 }
 
 .processingunit-bg{
-  background-image:url('services/processing-unit.webp');
+  background-image:url('services/processing-unit.png');
 }
 
 .lab-bg{
-  background-image:url('services/lab.webp');
+  background-image:url('services/lab.png');
 }
 
 .labDriveThru-bg{
-  background-image:url('services/lab-drive-thru.webp');
+  background-image:url('services/lab-drive-thru.png');
 }
 
 .ancillary-bg{
-  background-image:url('services/ancillary.webp');
+  background-image:url('services/ancillary.png');
 }
 
 .specialized-bg{
-  background-image:url('services/specialized.webp');
+  background-image:url('services/specialized.png');
 }
 
 .sim-bg{
-  background-image:url('services/sim.webp');
+  background-image:url('services/sim.png');
 }
 
 
@@ -426,19 +426,19 @@ body.debug .hotspot{
 }
 
 .ancillaryLab-bg{
-  background-image:url('services/laboratory-pathology.webp');
+  background-image:url('services/laboratory-pathology.png');
 }
 
 .ancillaryImaging-bg{
-  background-image:url('services/medical-imaging.webp');
+  background-image:url('services/medical-imaging.png');
 }
 
 .ancillaryPharmacy-bg{
-  background-image:url('services/pharmacy.webp');
+  background-image:url('services/pharmacy.png');
 }
 
 .ancillaryRehab-bg{
-  background-image:url('services/physical-rehabilitation.webp');
+  background-image:url('services/physical-rehabilitation.png');
 }
 
 /* MASS SCHEDULE */
@@ -478,23 +478,23 @@ body.debug .hotspot{
 }
 
 .massschedule-bg{
-  background-image:url('services/mass-schedule.webp');
+  background-image:url('services/mass-schedule.png');
 }
 
 .sacraments-bg{
-  background-image:url('services/sacraments.webp');
+  background-image:url('services/sacraments.png');
 }
 
 .vocation-bg{
-  background-image:url('services/vocation-promotion.webp');
+  background-image:url('services/vocation-promotion.png');
 }
 
 .medicalsocial-bg{
-  background-image:url('services/medical-social-services.webp');
+  background-image:url('services/medical-social-services.png');
 }
 
 .specialized-bg{
-  background-image:url('services/specialized.webp');
+  background-image:url('services/specialized.png');
 }
 
 /* =========================================
@@ -518,47 +518,47 @@ body.debug .hotspot{
 .specializedTbDotsBtn{top:72.3%;left:59.6%;width:18.3%;height:19%;}
 
 .specializedCancer-bg{
-  background-image:url('services/cancer-center.webp');
+  background-image:url('services/cancer-center.png');
 }
 
 .specializedEye-bg{
-  background-image:url('services/eye-surgi-center.webp');
+  background-image:url('services/eye-surgi-center.png');
 }
 
 .specializedRehab-bg{
-  background-image:url('services/physical-rehabilitiation-center.webp');
+  background-image:url('services/physical-rehabilitiation-center.png');
 }
 
 .specializedHemodialysis-bg{
-  background-image:url('services/hemodialysis-center.webp');
+  background-image:url('services/hemodialysis-center.png');
 }
 
 .specializedCardio-bg{
-  background-image:url('services/cardiovascular-center.webp');
+  background-image:url('services/cardiovascular-center.png');
 }
 
 .specializedNeurosleep-bg{
-  background-image:url('services/neurosleep-lab.webp');
+  background-image:url('services/neurosleep-lab.png');
 }
 
 .specializedHearing-bg{
-  background-image:url('services/hearing-center.webp');
+  background-image:url('services/hearing-center.png');
 }
 
 .specializedRespiratory-bg{
-  background-image:url('services/respiratory-care-unit.webp');
+  background-image:url('services/respiratory-care-unit.png');
 }
 
 .specializedNuclear-bg{
-  background-image:url('services/nuclear-medicine-center.webp');
+  background-image:url('services/nuclear-medicine-center.png');
 }
 
 .specializedGastro-bg{
-  background-image:url('services/gastrointestinal-center.webp');
+  background-image:url('services/gastrointestinal-center.png');
 }
 
 .specializedTbDots-bg{
-  background-image:url('services/tb-dots-hiv.webp');
+  background-image:url('services/tb-dots-hiv.png');
 }
 
 /* =========================================
@@ -580,7 +580,7 @@ body.debug .hotspot{
 ========================================= */
 
 .partnerHmo-bg{
-  background-image:url('services/hmo-partners.webp');
+  background-image:url('services/hmo-partners.png');
 }
 
 /* =========================================
@@ -588,7 +588,7 @@ body.debug .hotspot{
 ========================================= */
 
 .coophealth-bg{
-  background-image:url('services/coophealth.webp');
+  background-image:url('services/coophealth.png');
 }
 
 /* COOP HEALTH BUTTON */
@@ -608,7 +608,7 @@ body.debug .hotspot{
 ========================================= */
 
 .amaphil-bg{
-  background-image:url('services/amaphil.webp');
+  background-image:url('services/amaphil.png');
 }
 
 /* AMAPHIL BUTTON */
@@ -628,7 +628,7 @@ body.debug .hotspot{
 ========================================= */
 
 .benlife-bg{
-  background-image:url('services/benlife.webp');
+  background-image:url('services/benlife.png');
 }
 
 /* BENLIFE BUTTON */
@@ -648,7 +648,7 @@ body.debug .hotspot{
 ========================================= */
 
 .etiqa-bg{
-  background-image:url('services/shared-hmo.webp');
+  background-image:url('services/shared-hmo.png');
 }
 
 .etiqaBtn{
@@ -666,7 +666,7 @@ body.debug .hotspot{
 ========================================= */
 
 .asianlife-bg{
-  background-image:url('services/shared-hmo.webp');
+  background-image:url('services/shared-hmo.png');
 }
 
 .asianlifeBtn{
@@ -684,7 +684,7 @@ body.debug .hotspot{
 ========================================= */
 
 .carehealth-bg{
-  background-image:url('services/carehealth.webp');
+  background-image:url('services/carehealth.png');
 }
 
 .carehealthBtn{
@@ -702,7 +702,7 @@ body.debug .hotspot{
 ========================================= */
 
 .philcare-bg{
-  background-image:url('services/philcare.webp');
+  background-image:url('services/philcare.png');
 }
 
 .philcareBtn{
@@ -720,7 +720,7 @@ body.debug .hotspot{
 ========================================= */
 
 .eastwest-bg{
-  background-image:url('services/eastwest.webp');
+  background-image:url('services/eastwest.png');
 }
 
 .eastwestBtn{
@@ -738,7 +738,7 @@ body.debug .hotspot{
 ========================================= */
 
 .wellcare-bg{
-  background-image:url('services/wellcare.webp');
+  background-image:url('services/wellcare.png');
 }
 
 .wellcareBtn{
@@ -756,7 +756,7 @@ body.debug .hotspot{
 ========================================= */
 
 .getwell-bg{
-  background-image:url('services/getwell.webp');
+  background-image:url('services/getwell.png');
 }
 
 .getwellBtn{
@@ -774,7 +774,7 @@ body.debug .hotspot{
 ========================================= */
 
 .fortunelife-bg{
-  background-image:url('services/fortunelife.webp');
+  background-image:url('services/fortunelife.png');
 }
 
 .fortunelifeBtn{
@@ -792,7 +792,7 @@ body.debug .hotspot{
 ========================================= */
 
 .inlife-bg{
-  background-image:url('services/inlife.webp');
+  background-image:url('services/inlife.png');
 }
 
 .inlifeBtn{
@@ -810,7 +810,7 @@ body.debug .hotspot{
 ========================================= */
 
 .hppi-bg{
-  background-image:url('services/hppi.webp');
+  background-image:url('services/hppi.png');
 }
 
 .hppiBtn{
@@ -828,7 +828,7 @@ body.debug .hotspot{
 ========================================= */
 
 .ims-bg{
-  background-image:url('services/ims.webp');
+  background-image:url('services/ims.png');
 }
 
 .imsBtn{
@@ -846,7 +846,7 @@ body.debug .hotspot{
 ========================================= */
 
 .icare-bg{
-  background-image:url('services/icare.webp');
+  background-image:url('services/icare.png');
 }
 
 .icareBtn{
@@ -864,7 +864,7 @@ body.debug .hotspot{
 ========================================= */
 
 .inlife2-bg{
-  background-image:url('services/inlife2.webp');
+  background-image:url('services/inlife2.png');
 }
 
 .inlife2Btn{
@@ -882,7 +882,7 @@ body.debug .hotspot{
 ========================================= */
 
 .kaiser-bg{
-  background-image:url('services/kaiser.webp');
+  background-image:url('services/kaiser.png');
 }
 
 .kaiserBtn{
@@ -900,7 +900,7 @@ body.debug .hotspot{
 ========================================= */
 
 .lacson-bg{
-  background-image:url('services/lacson.webp');
+  background-image:url('services/lacson.png');
 }
 
 .lacsonBtn{
@@ -918,7 +918,7 @@ body.debug .hotspot{
 ========================================= */
 
 .lifeandhealth-bg{
-  background-image:url('services/lifeandhealth.webp');
+  background-image:url('services/lifeandhealth.png');
 }
 
 .lifeandhealthBtn{
@@ -936,7 +936,7 @@ body.debug .hotspot{
 ========================================= */
 
 .medasia-bg{
-  background-image:url('services/medasia.webp');
+  background-image:url('services/medasia.png');
 }
 
 .medasiaBtn{
@@ -954,7 +954,7 @@ body.debug .hotspot{
 ========================================= */
 
 .medilink-bg{
-  background-image:url('services/medilink.webp');
+  background-image:url('services/medilink.png');
 }
 
 .medilinkBtn{
@@ -972,7 +972,7 @@ body.debug .hotspot{
 ========================================= */
 
 .optimum-bg{
-  background-image:url('services/optimum.webp');
+  background-image:url('services/optimum.png');
 }
 
 .optimumBtn{
@@ -990,7 +990,7 @@ body.debug .hotspot{
 ========================================= */
 
 .pacificcross-bg{
-  background-image:url('services/pacificcross.webp');
+  background-image:url('services/pacificcross.png');
 }
 
 .pacificcrossBtn{
@@ -1008,7 +1008,7 @@ body.debug .hotspot{
 ========================================= */
 
 .valucare-bg{
-  background-image:url('services/valucare.webp');
+  background-image:url('services/valucare.png');
 }
 
 .valucareBtn{
@@ -1026,7 +1026,7 @@ body.debug .hotspot{
 ========================================= */
 
 .forticare-bg{
-  background-image:url('services/forticare.webp');
+  background-image:url('services/forticare.png');
 }
 
 .forticareBtn{
@@ -1044,7 +1044,7 @@ body.debug .hotspot{
 ========================================= */
 
 .medicard-bg{
-  background-image:url('services/medicard.webp');
+  background-image:url('services/medicard.png');
 }
 
 .medicardBtn{
@@ -1062,7 +1062,7 @@ body.debug .hotspot{
 ========================================= */
 
 .intellicare-bg{
-  background-image:url('services/intellicare.webp');
+  background-image:url('services/intellicare.png');
 }
 
 .intellicareBtn{
@@ -1080,7 +1080,7 @@ body.debug .hotspot{
 ========================================= */
 
 .maxicare-bg{
-  background-image:url('services/maxicare.webp');
+  background-image:url('services/maxicare.png');
 }
 
 .maxicareBtn{
@@ -1246,7 +1246,7 @@ body.debug .hotspot{
 }
 
 .imDept-bg{
-  background-image:url('clinics/im-dept.webp');
+  background-image:url('clinics/im-dept.png');
 }
 
 
@@ -1273,27 +1273,27 @@ body.debug .hotspot{
    IM DEPARTMENT SCREENS
 ========================================= */
 
-.allergologist-bg{background-image:url('clinics/allergologist.webp');}
-.cardiologist-bg{background-image:url('clinics/cardiologist.webp');}
-.criticalCare-bg{background-image:url('clinics/critical-care-medicine.webp');}
-.dermatologist-bg{background-image:url('clinics/dermatologist.webp');}
-.endocrinologist-bg{background-image:url('clinics/endocrinologist.webp');}
-.gastroenterologist-bg{background-image:url('clinics/gastroenterologist.webp');}
-.generalIm-bg{background-image:url('clinics/general-im.webp');}
-.hematologist-bg{background-image:url('clinics/adult-hematologist.webp');}
-.infectiousDisease-bg{background-image:url('clinics/infectious-disease.webp');}
-.neurologist-bg{background-image:url('clinics/neurologist.webp');}
-.nuclearMedicine-bg{background-image:url('clinics/nuclear-medicine.webp');}
-.occupationalMedicine-bg{background-image:url('clinics/occupational-medicine.webp');}
-.oncologist-bg{background-image:url('clinics/oncologist.webp');}
-.rheumatologist-bg{background-image:url('clinics/rheumatologist.webp');}
+.allergologist-bg{background-image:url('clinics/allergologist.png');}
+.cardiologist-bg{background-image:url('clinics/cardiologist.png');}
+.criticalCare-bg{background-image:url('clinics/critical-care-medicine.png');}
+.dermatologist-bg{background-image:url('clinics/dermatologist.png');}
+.endocrinologist-bg{background-image:url('clinics/endocrinologist.png');}
+.gastroenterologist-bg{background-image:url('clinics/gastroenterologist.png');}
+.generalIm-bg{background-image:url('clinics/general-im.png');}
+.hematologist-bg{background-image:url('clinics/adult-hematologist.png');}
+.infectiousDisease-bg{background-image:url('clinics/infectious-disease.png');}
+.neurologist-bg{background-image:url('clinics/neurologist.png');}
+.nuclearMedicine-bg{background-image:url('clinics/nuclear-medicine.png');}
+.occupationalMedicine-bg{background-image:url('clinics/occupational-medicine.png');}
+.oncologist-bg{background-image:url('clinics/oncologist.png');}
+.rheumatologist-bg{background-image:url('clinics/rheumatologist.png');}
 
 /* =========================================
    PEDIA
 ========================================= */
 
 .pediaDept-bg{
-  background-image:url('clinics/pedia-dept.webp');
+  background-image:url('clinics/pedia-dept.png');
 }
 
 .generalPediaBtn{top:25%;left:5.5%;width:42%;height:10%;}
@@ -1308,18 +1308,18 @@ body.debug .hotspot{
 .neonatologistBtn{top:64%;left:5.5%;width:42%;height:10%;}
 .pediaEndocrinoBtn{top:64%;left:49%;width:42%;height:10%;}
 
-.generalPedia-bg{background-image:url('clinics/general-pedia.webp');}
-.neonatologist-bg{background-image:url('clinics/neonatologist.webp');}
-.pediaCardio-bg{background-image:url('clinics/pedia-cardiologist.webp');}
-.pediaEndocrino-bg{background-image:url('clinics/pedia-endocrinologist.webp');}
-.pediaGastro-bg{background-image:url('clinics/pedia-gastroenterologist.webp');}
-.pediaHema-bg{background-image:url('clinics/pedia-hematologist.webp');}
-.pediaInfectious-bg{background-image:url('clinics/pedia-infectious-disease.webp');}
-.pediaPulmo-bg{background-image:url('clinics/pedia-pulmonologist.webp');}
+.generalPedia-bg{background-image:url('clinics/general-pedia.png');}
+.neonatologist-bg{background-image:url('clinics/neonatologist.png');}
+.pediaCardio-bg{background-image:url('clinics/pedia-cardiologist.png');}
+.pediaEndocrino-bg{background-image:url('clinics/pedia-endocrinologist.png');}
+.pediaGastro-bg{background-image:url('clinics/pedia-gastroenterologist.png');}
+.pediaHema-bg{background-image:url('clinics/pedia-hematologist.png');}
+.pediaInfectious-bg{background-image:url('clinics/pedia-infectious-disease.png');}
+.pediaPulmo-bg{background-image:url('clinics/pedia-pulmonologist.png');}
 
 
 
-.surgeryDept-bg{background-image:url('clinics/surgery-dept.webp');}
+.surgeryDept-bg{background-image:url('clinics/surgery-dept.png');}
 
 
 .neuroSurgeryBtn{top:35%;left:4.8%;width:27.5%;height:10.5%;}
@@ -1331,30 +1331,30 @@ body.debug .hotspot{
 .uroSurgeryBtn{top:61%;left:4.8%;width:40.0%;height:10.5%;}
 .generalSurgeryBtn{top:61%;left:47.0%;width:44.5%;height:10.5%;}
 
-.cardiovascularSurgery-bg{background-image:url('clinics/cardiovascular-surgery.webp');}
-.colorectalSurgery-bg{background-image:url('clinics/general-and-pediatrics-colorectal-surgery.webp');}
-.generalSurgery-bg{background-image:url('clinics/general-surgery.webp');}
-.neuroSurgery-bg{background-image:url('clinics/neuro-surgery.webp');}
-.orthopedicSurgery-bg{background-image:url('clinics/orthopedic-surgery.webp');}
-.uroSurgery-bg{background-image:url('clinics/uro-surgery.webp');}
+.cardiovascularSurgery-bg{background-image:url('clinics/cardiovascular-surgery.png');}
+.colorectalSurgery-bg{background-image:url('clinics/general-and-pediatrics-colorectal-surgery.png');}
+.generalSurgery-bg{background-image:url('clinics/general-surgery.png');}
+.neuroSurgery-bg{background-image:url('clinics/neuro-surgery.png');}
+.orthopedicSurgery-bg{background-image:url('clinics/orthopedic-surgery.png');}
+.uroSurgery-bg{background-image:url('clinics/uro-surgery.png');}
 
 .ent-bg{
-  background-image:url('clinics/ent.webp');
+  background-image:url('clinics/ent.png');
 }
 /* =========================================
    OPHTHALMOLOGY
 ========================================= */
 
 .ophthalmology-bg{
-  background-image:url('clinics/ophthalmology.webp');
+  background-image:url('clinics/ophthalmology.png');
 }
 
 .ophthalmologist-bg{
-  background-image:url('clinics/ophthalmologist.webp');
+  background-image:url('clinics/ophthalmologist.png');
 }
 
 .acesCebu-bg{
-  background-image:url('clinics/aces-cebu-team.webp');
+  background-image:url('clinics/aces-cebu-team.png');
 }
 
 /* =========================================
@@ -1386,7 +1386,7 @@ body.debug .hotspot{
 }
 
 .obGyneDept-bg{
-  background-image:url('clinics/obgyne-dept.webp');
+  background-image:url('clinics/obgyne-dept.png');
 }
 
 /* =========================================
@@ -1410,15 +1410,15 @@ body.debug .hotspot{
 }
 
 .obGyne-bg{
-  background-image:url('clinics/ob-gyne.webp');
+  background-image:url('clinics/ob-gyne.png');
 }
 
 .obGyneOncology-bg{
-  background-image:url('clinics/ob-gyne-oncology.webp');
+  background-image:url('clinics/ob-gyne-oncology.png');
 }
 
 .dentistryDept-bg{
-  background-image:url('clinics/dentistry-dept.webp');
+  background-image:url('clinics/dentistry-dept.png');
 }
 
 /* =========================================
@@ -1442,11 +1442,11 @@ body.debug .hotspot{
 } 
 
 .adultDentist-bg{
-  background-image:url('clinics/adult-dentist.webp');
+  background-image:url('clinics/adult-dentist.png');
 }
 
 .pediaDentist-bg{
-  background-image:url('clinics/pedia-dentist.webp');
+  background-image:url('clinics/pedia-dentist.png');
 }
 
 
@@ -1655,4 +1655,21 @@ body.debug .hotspot{
 
   box-shadow:
     0 2px 8px rgba(0,0,0,.08);
+}
+
+#screensaver{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  display:none;
+  z-index:999999;
+}
+
+#screensaver video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
