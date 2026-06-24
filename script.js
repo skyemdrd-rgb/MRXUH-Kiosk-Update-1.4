@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 
   /* =========================================
      ELEMENTS
@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   ========================= */
 
   function scaleApp(){
-
-  if(!app) return;
 
   const baseWidth = 1920;
   const baseHeight = 1080;
@@ -68,37 +66,35 @@ window.addEventListener(
   scaleApp
 );
 
-/* =========================================
-   SCREEN NAVIGATION
-========================================= */
+  /* =========================================
+     SCREEN NAVIGATION
+  ========================================= */
 
-window.showScreen = function(id){
+  window.showScreen = function(id){
 
-  const target = document.getElementById(id);
+    const target =
+      document.getElementById(id);
 
-  if(!target){
-    console.warn(`Screen not found: ${id}`);
-    return;
-  }
+    if(!target) return;
 
-  screens.forEach(screen => {
-    screen.classList.remove('active');
-  });
+    screens.forEach(screen => {
+      screen.classList.remove('active');
+    });
 
-  target.classList.add('active');
-};
+    target.classList.add('active');
+  };
 
-window.goHome = function(){
-  showScreen('homeScreen');
-};
+  window.goHome = function(){
+    showScreen('homeScreen');
+  };
 
-window.goGuide = function(){
-  showScreen('guideScreen');
-};
+  window.goGuide = function(){
+    showScreen('guideScreen');
+  };
 
-window.goStart = function(){
-  showScreen('startScreen');
-};
+  window.goStart = function(){
+    showScreen('startScreen');
+  };
 
   /* =========================================
      MAP STATE
@@ -276,7 +272,6 @@ window.goStart = function(){
 
     void mapImage.offsetWidth;
 
-    mapImage.decoding = 'async';
     mapImage.src = data.image;
 
     mapImage.classList.add(
@@ -285,28 +280,30 @@ window.goStart = function(){
 
     /* CLEAR DESTINATIONS */
 
-    const fragment =
-  document.createDocumentFragment();
-
-data.destinations.forEach(item => {
-
-  const button =
-    document.createElement('div');
-
-  button.className = 'destination';
-  button.textContent = item.name;
-
-  button.onclick = () =>
-    showWaypoint(item.x, item.y);
-
-  fragment.appendChild(button);
-
-});
-
-destinations.replaceChildren(fragment);
+    destinations.innerHTML = '';
 
     /* CREATE BUTTONS */
 
+    data.destinations.forEach(item => {
+
+      const button =
+        document.createElement('div');
+
+      button.className =
+        'destination';
+
+      button.innerText =
+        item.name;
+
+      button.onclick = () => {
+        showWaypoint(item.x, item.y);
+      };
+
+      destinations.appendChild(
+        button
+      );
+
+    });
 
   }
 
@@ -391,46 +388,43 @@ destinations.replaceChildren(fragment);
      IDLE TIMER
   ========================================= */
 
-  let idleTimer;
+  const screensaver =
+  document.getElementById('screensaver');
 
-  function resetIdleTimer(){
+let screensaverTimer;
 
-    clearTimeout(idleTimer);
+function showScreensaver() {
+  goHome();
+  screensaver.style.display = 'block';
+}
 
-    idleTimer = setTimeout(() => {
+function hideScreensaver() {
+  screensaver.style.display = 'none';
+}
 
-      if(
-        document.getElementById(
-          'startScreen'
-        )
-      ){
-        showScreen('startScreen');
-      }
-      else{
-        showScreen('homeScreen');
-      }
+function resetScreensaver() {
 
-    }, 300000);
+  clearTimeout(screensaverTimer);
 
-  }
+  screensaverTimer = setTimeout(() => {
+    showScreensaver();
+  }, 180000);
 
-  [
-    'mousemove',
-    'mousedown',
-    'touchstart',
-    'click',
-    'keydown'
-  ].forEach(event => {
+}
 
-    document.addEventListener(
-      event,
-      resetIdleTimer
-    );
+document.addEventListener('click', () => {
+  hideScreensaver();
+  resetScreensaver();
+});
 
-  });
+document.addEventListener('touchstart', () => {
+  hideScreensaver();
+  resetScreensaver();
+});
 
-  resetIdleTimer();
-
+/* START WITH SCREENSAVER */
+showScreensaver();
+resetScreensaver();
   /* =========================================
      INIT
   ========================================= */
@@ -449,55 +443,24 @@ document.addEventListener(
   e => e.preventDefault()
 );
 
+if('serviceWorker' in navigator){
 
+  window.addEventListener('load', () => {
 
-/* =========================================
-   MEMORY PROTECTION
-========================================= */
+    navigator.serviceWorker.register('sw.js')
+      .then(() => {
 
-setInterval(() => {
+        console.log('Service Worker Registered');
 
-  if(!performance.memory) return;
+      });
 
-  const usedMB =
-    performance.memory.usedJSHeapSize /
-    1024 / 1024;
+  });
 
-  console.log(
-    `Memory Usage: ${Math.round(usedMB)} MB`
-  );
-
-  // Emergency reload
-  if(usedMB > 350){
-
-    console.warn(
-      'High memory usage detected. Reloading kiosk.'
-    );
-
-    location.reload();
-
-  }
-
-}, 60000);
-
-// Refresh every 2 hours
-setInterval(() => {
-  console.log('Scheduled kiosk refresh');
-  location.reload();
-}, 3 * 60 * 60 * 1000);
+}
 
 /* =========================================
-   SMART PRELOAD
+   OFFLINE MODE
 ========================================= */
 
-const preloadImages = [
-  'map/msc-map.png',
-  'interface/home.png'
-];
-
-preloadImages.forEach(src => {
-  const img = new Image();
-  img.src = src;
-});
 
 });
